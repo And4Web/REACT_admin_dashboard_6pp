@@ -12,10 +12,11 @@ function App() {
     <BR>      
       <Suspense fallback={<Loader/>}>
       <Routes>
+        <Route path="/" element={<><h1>Admin Dashboard - Home Page</h1></>}/>
         <Route path="/dashboard" element={<Dashboard/>}/>
         <Route path="/products" element={<Products/>}/>
-        <Route path="/transaction" element={<Transaction/>}/>
-        <Route path="/customer" element={<Customer/>}/>
+        <Route path="/transactions" element={<Transaction/>}/>
+        <Route path="/customers" element={<Customer/>}/>
           
           
           {/*Charts  */}

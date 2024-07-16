@@ -1,8 +1,15 @@
 import React from 'react'
+import AdminSidebar from '../components/AdminSidebar'
 
 function Transaction() {
   return (
-    <div>Transaction</div>
+    <div className='adminContainer'>
+      <AdminSidebar/>
+
+      <main>
+        Main
+      </main>
+    </div>
   )
 }
 
