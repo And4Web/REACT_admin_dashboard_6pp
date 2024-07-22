@@ -1,6 +1,7 @@
 // @use "mixin";
 @import 'mixin';
-// @import url('./loader.scss');
+@import './loader.scss';
+@import './dashboard.scss';
 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;

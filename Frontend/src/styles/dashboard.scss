@@ -1,0 +1,74 @@
+.dashboard{
+  overflow-y: auto;
+
+  .bar{
+    height: 4rem;
+    @include flex(row, unset);
+    padding: 0 1rem;
+    border-bottom: 1px solid black;
+    >input{
+      margin-right: auto;
+      @input inputStyle(100%, 1rem 0)
+    }
+    >svg{
+      font-size: 1.2rem;
+      opacity: 0.7;
+    }
+    >img{
+      @include square(2.2rem);
+      cursor: pointer;
+      // border: 1px solid black;
+      background-color: white;
+      padding: 2px;
+      border-radius: 50%;
+    }
+  }
+
+  .widget-container{
+    @include flex(row, space-between, stretch, 2rem);
+    padding: 2rem 2rem 2rem 0;
+    .widget{
+      width: 16rem;
+      background-color: white;
+      box-shadow: 0 0 10px rgba(0,0,0,.132);
+      border-radius: 5px;
+      padding: .5rem;
+      @include flex(row, space-between, stretch, 0);
+
+      .widget-info{
+        >p{
+          opacity: 0.7;
+          font-size: 0.8rem;
+        }
+        >h4{
+          font-size: 1.5rem;
+        }
+        >span{
+          @include flex(row, unset, center, 0)
+        }
+      }
+
+
+      .widget-circle{
+        position: relative;
+        @include square(5rem);
+        flex: none;
+        border-radius: 50%;
+        background-color: gold;
+        display: grid;
+        place-items: center;
+        &::before{
+          content: "";
+          position: absolute;
+          @include square(4rem);
+          background-color: white;
+          border-radius: 50%;          
+        }
+        span{
+          position: relative;
+        }
+      }
+    }
+
+  }
+}
