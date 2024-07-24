@@ -32,12 +32,13 @@ a{
   color: green;
 }
 
-.adminContainer{
+.admin-container{
   @include grid(1fr 4fr, 1rem);
   height: 100vh;
   background-color: whitesmoke;
   margin: 0 1rem 1rem 1rem;
-
+  width: 97.4vw;
+  // overflow-x: auto;
   >aside{
     // border: 1px solid red;
     width: 100%;
@@ -74,9 +75,8 @@ a{
 
   }
 
-
-  >main{
+  // >main{
     // border: 1px solid green;
-  }
+  // }
   
 }

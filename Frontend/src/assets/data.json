@@ -1,0 +1,25 @@
+{
+  "categories":[
+    {
+      "value": 45,
+      "heading": "Camera"
+    },
+    {
+      "value": 61,
+      "heading": "Laptop"
+    },
+    {
+      "value": 83,
+      "heading": "Smartphone"
+    },
+    {
+      "value": 28,
+      "heading": "Tablet"
+    },
+    {
+      "value": 57,
+      "heading": "TV"
+    }
+  ],
+  "transactions":[]
+}

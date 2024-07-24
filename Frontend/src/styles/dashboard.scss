@@ -1,6 +1,5 @@
 .dashboard{
-  overflow-y: auto;
-
+  overflow: auto;
   .bar{
     height: 4rem;
     @include flex(row, unset);
@@ -8,7 +7,8 @@
     border-bottom: 1px solid black;
     >input{
       margin-right: auto;
-      @input inputStyle(100%, 1rem 0)
+      @include inputStyle(100%, 1rem 0);
+      color: red;
     }
     >svg{
       font-size: 1.2rem;
@@ -69,6 +69,73 @@
         }
       }
     }
+  }
 
+
+
+  .graph-container{
+    @include flex(row, unset, unset, 2rem);
+    padding: 0 2rem 2rem 0;
+
+    >div{
+      background-color: white;
+      border-radius: 10px;
+    }
+    .revenue-chart{
+      width: 100%;
+      // @include flex(column, center, center, 2rem);
+      padding-bottom: 2rem;
+
+       >h2{
+        @include heading;
+        margin: 1rem 0 2rem 0.25rem;
+        text-align: center;
+       }
+    }
+
+    .inventory-chart{
+      width: 100%;
+      max-width: 16rem;
+      // min-width: 5rem;
+      padding-bottom: 2rem;
+      @include flex(column, center, unset, 2rem);
+
+       >h2{
+        @include heading;
+        margin: 1.5rem 0 2rem 0;
+        text-align: center;
+       }
+
+       >div{
+        overflow-y: auto;
+        padding-left: .5rem;
+       }
+
+      //  something left
+      .category-item{
+        @include flex(row, space-between);
+        padding: 0 10px;
+        >h5{
+          font-weight: 300;
+          letter-spacing: 1px;
+        }
+        >div{
+          width: 100%;
+          min-width: 3rem;
+          height: .5rem;
+          background-color: rgb(217,217,217);
+          border-radius: 20px;
+          >div{
+            
+            height: 100%;
+            border-radius: 20px;
+          }
+        }
+        >span{
+          font-weight: 500;
+          font-size: small;
+        }
+      }
+    }
   }
 }
