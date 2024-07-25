@@ -4,6 +4,7 @@ import { FaRegBell } from "react-icons/fa";
 import userImage from '../assets/images/male4.png';
 import { HiTrendingDown, HiTrendingUp } from "react-icons/hi";
 import data from '../assets/data.json';
+import BarChart from "../components/BarChart";
 
 function Dashboard() {
   return (
@@ -34,6 +35,10 @@ function Dashboard() {
           {/* revenue chart */}
           <div className="revenue-chart">
             <h2>Revenue and Transactions</h2>
+            {/* Chart container */}
+        <section className="chart-container">
+          <BarChart data_1={[1210,1850, 175, 198, 995, 1354, 2915,472,321,1980,222,1718]} data_2={[910,1320,172,284,161,870,930,111,220,1480,80,1910]} title_1="Revenue" title_2="Transactions" bgColor_1="rgb(5, 210, 255)" bgColor_2="rgba(3, 12, 250)" />
+        </section>
           </div>
 
           {/* inventory chart */}
@@ -47,13 +52,17 @@ function Dashboard() {
                   )
                 })
               }
-              {/* <CategoryItem heading="Laptop" value={70} color="purple"/>
-              <CategoryItem heading="Smartphone" value={45} color="gold"/>
-              <CategoryItem heading="Camera" value={80} color="green"/>
-              <CategoryItem heading="Tablet" value={30} color="pink"/> */}
             </div>
           </div>
         </section>
+
+
+      {/* Transactin container */}
+      <section className="transation-container">
+        <h3>Transaction container</h3>
+      </section>
+
+        
       </main>
 
     </div>

@@ -1,23 +1,23 @@
 {
   "categories":[
     {
-      "value": 45,
+      "value": 38,
       "heading": "Camera"
     },
     {
-      "value": 61,
+      "value": 63,
       "heading": "Laptop"
     },
     {
-      "value": 83,
+      "value": 77,
       "heading": "Smartphone"
     },
     {
-      "value": 28,
+      "value": 31,
       "heading": "Tablet"
     },
     {
-      "value": 57,
+      "value": 52,
       "heading": "TV"
     }
   ],
