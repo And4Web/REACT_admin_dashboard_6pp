@@ -5,6 +5,8 @@ import userImage from '../assets/images/male4.png';
 import { HiTrendingDown, HiTrendingUp } from "react-icons/hi";
 import data from '../assets/data.json';
 import BarChart from "../components/BarChart";
+import { BiMaleFemale } from "react-icons/bi";
+import DoughnutChart from "../components/DoughnutChart";
 
 function Dashboard() {
   return (
@@ -58,8 +60,17 @@ function Dashboard() {
 
 
       {/* Transactin container */}
-      <section className="transation-container">
-        <h3>Transaction container</h3>
+      <section className="transaction-container">
+        <div className="gender-chart">
+          <h2>Gender Ratio</h2>
+          {/* doughnut chart */}
+          <DoughnutChart labels={['Female', 'Male']} data={[43, 23]} backgroundColor={['hsl(340, 82%, 56%)', 'rgba(53, 162, 235, 0.8)']} title="Gender-wise customers" cutout={90}/>
+          <p>
+            <BiMaleFemale/>
+          </p>
+        </div>
+
+        {/* Table */}
       </section>
 
         
